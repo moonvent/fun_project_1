@@ -1,5 +1,5 @@
 import os
-import motor
+import motor.motor_asyncio
 
 from services.constants.database import DATABASE_NAME
 

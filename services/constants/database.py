@@ -6,8 +6,7 @@
 DATABASE_NAME = 'blog'
 
 
-class Sequence:
+class DbSecuence:
     Comments = 'comments'
     Users = 'users'
     Posts = 'posts'
-

@@ -1,3 +1,0 @@
-"""
-    Models used in api
-"""
