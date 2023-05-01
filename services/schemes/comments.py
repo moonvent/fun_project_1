@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field
 from datetime import datetime
-from rest_api.models.users import User
+
+from services.schemes.users import User
 
 
 class Comment(BaseModel):

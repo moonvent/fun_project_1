@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 
-from rest_api.models.comments import Comment
-from rest_api.models.users import User
+from services.schemes.comments import Comment
+from services.schemes.users import User
 
 
 class Post(BaseModel):

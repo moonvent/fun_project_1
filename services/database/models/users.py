@@ -1,7 +1,6 @@
 from services.exceptions.database.models.users import CannotCreateUser
 from services.schemes.users import User
-from services.constants.database import DbSecuence
-from services.database.database_init import db
+from services.database.database_init import users_collection
 
 
 async def create_user_in_db(user: User):
@@ -15,7 +14,7 @@ async def create_user_in_db(user: User):
             CannotCreateUser: if can't create a new user
     """
     try:
-        await db[DbSecuence.Users].insert_one(user.dict())
+        await users_collection.insert_one(user.dict())
 
     except Exception as e:
         raise CannotCreateUser(e)
