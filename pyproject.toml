@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fun-project-1"
+version = "0.0.1"
+description = "Project which need to remember fast api, and mongo, and little practise with this"
+authors = ["moonvent <terraboneystone@proton.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fun_project_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+debugpy = "^1.6.7"
+pytest = "^7.3.1"
+motor = "^3.1.2"
+sphinxcontrib-napoleon = "^0.7"
+sphinx = "^7.0.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
